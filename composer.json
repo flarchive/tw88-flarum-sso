@@ -1,0 +1,38 @@
+{
+    "name": "tw88/flarum-sso",
+    "description":  "Flarum SSO",
+    "keywords": [
+        "misc",
+        "settings",
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Wiedenhöfer",
+            "email": "twiedenhoefer@dbkg.de",
+            "homepage": "https://dbkg.de"
+        }
+    ],
+    "require": {
+        "flarum/core": "*",
+        "tw88/sso": "^2.0",
+        "vlucas/phpdotenv": "^5.0.0"
+    },
+      "autoload": {
+        "psr-4": {
+            "tw88\\sso\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flarum SSO",
+            "icon": {
+                "name": "users",
+                "backgroundColor": "rgb(183, 42, 42)",
+                "color": "#fff"
+            }
+        }
+    }
+}
